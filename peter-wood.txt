@@ -1,0 +1,117 @@
+https://codepen.io/numbers0580/pen/dyYJgWp?editors=1100
+
+    1. What is Semantic HTML?
+        They are tags that give meaning to our code.
+    2. What is HTML used for?
+        It's to create the foundation, layout, and or framework of our webpage
+    3. What is an attribute and where do we put it? 
+        They are additional information for the HTML tags. They can go inside the opening tag or in CSS
+    4. What is the h1 tag used for? How many times should I use it on a page?
+        <h1> is the main header tag. It's used for the main title, so we should only use it once.
+    5. Name two tags that have required attributes
+        <a> requires at least the href="" attribute. <img> requires the src="" attribute.
+    6. What do we put in the head of our HTML document? 
+        The title of the webpage <title>, any relevant meta data <meta>, and links to external javascript or css pages <link>
+    7. What is an id? 
+        It is a very specific selector, as each id used must be uniquely named, as oppossed to class or element selectors
+    8. What elements can I add an id to? 
+        Literally any HTML element, even the <body> tag, though I'm not sure why one would need to.
+    9. How many times can I use the same id on a page? 
+        Only once. But that never stopped me from making the following id's before: id="div001", id="div002", etc
+    10. What is a class? 
+        It's an attribute that calls the specified CSS dot-method it's named for. <h1 class="bigNblue"> calls the .bigNblue {} method.
+    11. What elements can I add a class to? 
+        Classes can be added to any element.
+    12. How many times can I use the same class on a page? 
+        As many times, as long as the class is relevant. A p.doStuff {} class won't work on a <h1> tag.
+    13. How do I get my link to open in a new tab?
+        Include the appropriate target: <a href="https://www.insert/path/here.com" target="_blank">
+    14. What is the alt attribute in the image tag used for? 
+        In the event the image doesn't show, the text in the alt attribute will show instead and give a description.
+    15. How do I reference an id?
+        In CSS, you would use the '#'. So <section id="boldestOne"> is referenced by #boldestOne {}
+    16. What is the difference between a section and a div
+        <section> is semantic HTML, and <div> is not, but it's used to help structure a desired page layout
+    17. What is CSS used for? 
+        To style various sections of a page and the elements therein a speficied way: fonts, colors, sizes, etc
+    18. How to we select an element? Example - every h2 on the page
+        Unlike classes and id's, no prefixing symbol is needed in CSS. So for the above question, use h2 {}
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+        Classes can be used in multiple elements (so as to design those elements all the same way).
+        ID's are for singular elements, usually used to anchor parts of a page.
+        Example: class
+        <section class="prettiness">
+        .prettiness {
+            color: pink;
+            background-color: magenta;
+            font-family: "Lucida Calligraphy";
+            font-weight: bold;
+        }
+
+        Example: ID
+        <section id="firstStopOnRoute">
+        <a href="#firstStopOnRoute"> -- This link will look for the above ID
+            or
+        #firstStopOnRoute {
+            color: gold;
+        }
+    20. How do we select classes in CSS?
+        Classes in CSS are preceded by a dot. Example: <p class="diddy"> calls .diddy {} in CSS
+    21. How do we select a p element with a single class of “human””?
+        I assume this question implies the p element is nested within another element with a class of "human". So it would be .human p {}
+    22. What is a parent child selector? When would this be useful? 
+        A parent child selector is a nested selector in CSS. Like .human p {} example above. It's useful if you don't want to target all of a certain element, like all <p>'s
+    23. How do you select all links within a div with the class of sidebar?
+        Again, I presume several elements have class="sidebar" but we only want the div. We would use div.sidebar {}
+    24. What is a pseudo selector?
+        Psuedo selectors use specific words following the CSS selector that would only be called during a given state.
+        Examples: a:hover {} -- the "hover" is a pseudo selector activated when the mouse is hovering over a link.
+        a:visited {}
+        section:last-child {} -- are some more examples
+    25. What do we use the change the spacing between lines?
+        inside the {} in CSS, we'd use line-height: x; where x > 1 to increase the line-height. Example: line-height: 1.65; or line-height: 2.17;
+    26. What do we use to change the spacing between letters?
+        inside the {} in CSS, use letter-spacing: #px; Example: letter-spacing: 14px;
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+        inside the {} in CSS, use text-transform: uppercase; text-transform: lowercase; text-transform: capitalize; respectively.
+    28. How do I add a 1px border around my div that is dotted and black?
+        {
+            border-width: 1px;
+            border-style: dotted;
+            border-color: black;
+        }
+    29. How do I select everything on the page? 
+        use body {} in CSS
+    30. How do I write a comment in CSS?
+        //for single-line comments,
+        and
+        /* for
+           block
+           aka
+           (multi-line)
+           comments */
+    31. How do I find out what file I am in, when I am using the command line? 
+        I assume by "file," you mean directory. code fileName.ext
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+        ls
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+        rm fileName.ext -- Care is needed since no warnings given and it's irreversible
+    34. Why should I use version control? 
+        It allows you to go back to a previous working version in case you need to without saving countless new versions yourself on your computer
+    35. How often should I commit to github?
+        Whenever you complete any significant change, but at least every 20 minutes.
+    36. What is the command we would use to push our repo up to github? 
+
+    37. Walk me through Lambda's git flow. 
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+
+    2. What happens when an element is positioned absolutely? 
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
+
+    5. In your own words, explain the box model. What is the "fix" for the box model, in other words, how do we make all elements respect the width we've given them? 
